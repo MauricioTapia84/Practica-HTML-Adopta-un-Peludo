@@ -1,0 +1,47 @@
+.nav-text .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: red;
+    padding: 10px; /* Añade relleno para que el 'botón' tenga espacio */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+    border-radius: 5px; 
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.nav-text .nav-link:hover {
+    color: white; /* Cambia el color del texto a blanco para que se lea mejor */
+    background-color: #ff5100; /* Color de fondo naranja, igual que tu página */
+    letter-spacing: 2px;
+    border-color: #ff5100;
+}
+
+#mi-navbar {
+    background-color: #d1d1d1 !important; 
+    padding: 10px;
+}
+
+.body {
+    background-color: #ff5100;
+}
+
+.carousel-inner {
+    max-width: 1800px;  /* Ancho máximo del carrusel */
+    margin: auto;      /* Centra el carrusel */
+}
+
+.carousel-item img {
+    width: 100%;         /* La imagen ocupará el 100% del ancho del contenedor */
+    height: 800px;       /* Establece una altura fija para todas las imágenes */
+    object-fit: fill; 
+    display: block;      /* Elimina el espacio extra debajo de las imágenes */
+}
+
+.nav-item {
+    background-color: #e7dbcdc0; /* Un gris claro, más claro que tu navbar */
+    padding: 10px; /* Espacio de relleno para crear el "cuadrado" */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.384); /* Borde permanente de 1px, sólido y negro */
+}
