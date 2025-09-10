@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta el Peludo</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+</head>
+
+<body class="body">
+    <nav id="mi-navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="galeria-adopcion.html">Adopta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Colabora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="Login.html">Perfil</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="mt-3">
+        <section>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image/Carrusel Image 1.png" class="d-block w-100" alt="Perro golden retriever feliz acostado en el pasto.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Carrusel Image 2.png" class="d-block w-100" alt="Gato naranja con blanco sentado en un tronco, con un jardín de fondo.">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image/Carrusel Image 3.png" class="d-block w-100" alt="Grupo de perros de diferentes razas.">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <main class="mt-3">
+
+        <section class="cuadro-base cuadro-contenido">
+            <h3>Nuestra Historia</h3>
+            <p>
+                El Refugio de Mascotas fue fundado en 2018 por Laura y Daniel, una pareja que compartía una profunda pasión por los animales sin hogar.
+                Su inspiración surgió tras rescatar a un pequeño perro abandonado, al que llamaron 'Pipo'. Se dieron cuenta de la gran necesidad de un espacio seguro para
+                animales que, como Pipo, esperaban una segunda oportunidad. Decidieron crear un refugio en Renca que no solo proporcionara un hogar temporal, sino que también
+                funcionara como un centro de encuentro para la comunidad, promoviendo la adopción responsable y la tenencia consciente.
+            </p>
+        </section>
+
+        <section class="cuadro-base cuadro-contenido">
+            <h3>Nuestros Amigos</h3>
+            <p>
+                En nuestro refugio, cada animal está lleno de amor, paciencia y esperanza. Conócelos por categoría:
+            </p>
+            <table class="tabla-moderna">
+                <tbody>
+                    <tr>
+                        <td class="item-menu">
+                            <img src="Image/perros-adopcion.png" alt="Perros en adopción">
+                            <div class="menu-desplegable" data-item="item1">
+                                <h4>Perros</h4>
+                                <ul>
+                                    <li><strong>Juguetones:</strong> Perros llenos de energía, listos para correr y jugar.</li>
+                                    <li><strong>Tranquilos:</strong> Compañeros fieles, ideales para un hogar sereno.</li>
+                                    <li><strong>Cachorros:</strong> Pequeños que necesitan amor y educación.</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="item-menu">
+                            <img src="Image/gatos-adopcion.png" alt="Gatos en adopción">
+                            <div class="menu-desplegable" data-item="item2">
+                                <h4>Gatos</h4>
+                                <ul>
+                                    <li><strong>Exploradores:</strong> Felinos curiosos que adoran investigar.</li>
+                                    <li><strong>Cariñosos:</strong> Gatos que siempre buscan un regazo.</li>
+                                    <li><strong>Hermanos:</strong> Duplas inseparables que se adoptan juntos.</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="item-menu">
+                            <img src="Image/hamster-adopcion.png" alt="Hámsteres en adopción">
+                            <div class="menu-desplegable" data-item="item3">
+                                <h4>Roedores</h4>
+                                <ul>
+                                    <li><strong>Hámsteres:</strong> Pequeños y veloces, muy fáciles de cuidar.</li>
+                                    <li><strong>Cobayas:</strong> Mascotas amigables, perfectas para la familia.</li>
+                                    <li><strong>Conejos:</strong> Compañeros tranquilos que adoran las verduras.</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="cuadro-base cuadro-contenido">
+            <header>
+                <h3>Ubicación y Horarios</h3>
+                <p>
+                    Nuestro refugio está ubicado en la <strong>Calle de los Amigos 55, Renca, Santiago.</strong>
+                </p>
+            </header>
+            <h4>Horarios de Visita</h4>
+            <ul>
+                <li><strong>Martes a viernes:</strong> 10:00 a.m. - 5:00 p.m.</li>
+                <li><strong>Sábados y domingos:</strong> 11:00 a.m. - 4:00 p.m.</li>
+            </ul>
+        </section>
+
+        <section class="cuadro-base cuadro-contenido">
+            <header>
+                <h3>Cómo Colaborar</h3>
+                <p>
+                    Tu apoyo es vital para seguir ayudando a quienes más lo necesitan. ¡Hay muchas formas de colaborar!
+                </p>
+            </header>
+            <table class="tabla-moderna">
+                <tbody>
+                    <tr>
+                        <td class="item-menu">
+                            <img src="Image/donacion.png" alt="Donaciones">
+                            <div class="menu-desplegable" data-item="item1">
+                                <h4>Donaciones:</h4>
+                                <ul>
+                                    <li><strong>Alimentos y suministros:</strong> Aceptamos donaciones de comida, juguetes, mantas y medicinas.</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="item-menu">
+                            <img src="Image/voluntariado.png" alt="Voluntariado">
+                            <div class="menu-desplegable" data-item="item2">
+                                <h4>Voluntariado:</h4>
+                                <ul>
+                                    <li><strong>Paseos y cuidados:</strong> Puedes ayudarnos paseando a los perros o limpiando las áreas de los gatos.</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td class="item-menu">
+                            <img src="Image/apadrinamiento.png" alt="Apadrinamiento">
+                            <div class="menu-desplegable" data-item="item3">
+                                <h4>Apadrinamiento:</h4>
+                                <ul>
+                                    <li><strong>Apadrina a una mascota:</strong> Si no puedes adoptar, puedes apoyar económicamente a un animal específico.</li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    
+
+    <footer class="footer">
+        <div class="footer-container">
+            <section>
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <h6 class="footer-heading">Navegación</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                        <p><a href="index.html" class="footer-link">Inicio</a></p>
+                        <p><a href="#" class="footer-link">Nosotros</a></p>
+                        <p><a href="galeria-adopcion.html" class="footer-link">Adopta</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <h6 class="footer-heading">Síguenos</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                        <p><a href="#" class="footer-link">Facebook</a></p>
+                        <p><a href="#" class="footer-link">Instagram</a></p>
+                        <p><a href="#" class="footer-link">Twitter</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-copyright">
+            © 2025 Refugio de Mascotas
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

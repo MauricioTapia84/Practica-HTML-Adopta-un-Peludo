@@ -1,59 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perros</title>
+    <title>Perros en Adopción</title>
 
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> 
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
 </head>
-<body>
 
+<body class="body">
     <nav id="mi-navbar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item nav-text">
-                <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item nav-text">
-                <a class="nav-link" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item nav-text">
-                <a class="nav-link" href="Galeria Adopción.html">Adopta</a>
-                </li>
-                <li class="nav-item nav-text">
-                <a class="nav-link" href="#">Colabora</a>
-                </li>
-                <li class="nav-item nav-text">
-                <a class="nav-link"  href="#">Contáctanos</a>
-                </li>
-            </ul>
-
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="galeria-adopcion.html">Adopta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Colabora</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="Login.html">Perfil</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-            <a class="page-link">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     
+    <main>
+        <div class="container my-5">
+            <h1 class="text-center">Perros listos para ser adoptados</h1>
+            <p class="text-center lead">¡Encuentra a tu nuevo mejor amigo!</p>
+        </div>
+
+        <div class="container my-4">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/max.png" class="card-img-top" alt="Max, un perro mestizo sonriente y amigable con pelaje marrón claro.">
+                        <div class="card-body">
+                            <h5 class="card-title">Max</h5>
+                            <p class="card-text">Max es un perro lleno de energía, le encanta jugar y salir a correr. Es perfecto para una familia activa.</p>
+                            <a href="#" class="btn btn-primary">Más detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/alfredo.png" class="card-img-top" alt="Alfredo, un cachorro de labrador de pelaje negro, con un temperamento muy dócil.">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfredo</h5>
+                            <p class="card-text">Alfredo es un cachorro muy tierno y tranquilo. Le gusta que lo acaricien y es ideal para vivir en un apartamento.</p>
+                            <a href="#" class="btn btn-primary">Más detalles</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="image/luna.png" class="card-img-top" alt="Luna, una perra adulta de raza Husky siberiano con pelaje blanco y ojos de colores diferentes.">
+                        <div class="card-body">
+                            <h5 class="card-title">Luna</h5>
+                            <p class="card-text">Luna es una perra leal y muy protectora. Le encantan los paseos por la naturaleza y es una excelente compañera.</p>
+                            <a href="#" class="btn btn-primary">Más detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Navegación de páginas">
+            <ul class="pagination justify-content-center my-5">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+                </li>
+                <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Siguiente</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container text-center mt-5 mb-5">
+            <a href="galeria-adopcion.html" class="btn btn-primary" role="button">Volver</a>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <section>
+                <div class="row text-center text-md-start">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <h6 class="footer-heading">Navegación</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                        <p><a href="index.html" class="footer-link">Inicio</a></p>
+                        <p><a href="#" class="footer-link">Nosotros</a></p>
+                        <p><a href="galeria-adopcion.html" class="footer-link">Adopta</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                        <h6 class="footer-heading">Síguenos</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px"/>
+                        <p><a href="#" class="footer-link">Facebook</a></p>
+                        <p><a href="#" class="footer-link">Instagram</a></p>
+                        <p><a href="#" class="footer-link">Twitter</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-copyright">
+            © 2025 Refugio de Mascotas
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

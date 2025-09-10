@@ -1,0 +1,73 @@
+/* Centrar el formulario en la pantalla */
+.abs-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Estilo del formulario */
+.form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Cada bloque de input */
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Estilo de labels */
+.form-input label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Estilo de inputs */
+.form-input input {
+    padding: 10px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-input input:focus {
+    outline: none;
+    border-color: #0d6efd; /* Color azul bootstrap */
+    box-shadow: 0 0 5px rgba(13,110,253,0.5);
+}
+
+/* Mensaje de error */
+.mensajeError {
+    color: #dc3545; /* Color rojo Bootstrap */
+    font-size: 14px;
+    margin-top: 5px;
+    min-height: 18px; /* Para que no salten los inputs al mostrar error */
+}
+
+/* Estilo del botón */
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* Espaciado entre los inputs */
+.form-input + .form-input {
+    margin-top: 10px;
+}
