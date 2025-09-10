@@ -27,27 +27,21 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usuario.value === "admin" && password.value === "1234") {
          
           // redirigir a otra página
-          window.location.href = "index-logueado.html";
+          window.location.href = "../index-logueado.html";
         } else {
           mostrarError("password", "Usuario o contraseña incorrectos");
         }
       }
     });
-
-    form.addEventListener('menu', function (event) {
-        event.preventDefault();
-    
-            // redirigir a otra página
-            window.location.href = "Registrarse.html";
-   
-        }
-    );
     
   
     function mostrarError(claseInput, mensaje) {
       let elemento = document.querySelector(`.${claseInput}`);
-      elemento.lastElementChild.innerHTML = mensaje;
-    }  
+      if (elemento) {
+          elemento.lastElementChild.innerHTML = mensaje; // Muestra el mensaje
+          console.log(`Error en ${claseInput}: ${mensaje}`); // Para depuración
+      }
+  }
   
     
   });

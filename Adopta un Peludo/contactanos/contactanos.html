@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="abs-center">
+        <form class="form" id="contactForm">
+            <h2>Contáctanos</h2>
+
+            <div class="form-input nombre">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <p class="mensajeError"></p>
+            </div>
+            
+            <div class="form-input email">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required>
+                <p class="mensajeError"></p>
+            </div>
+            
+            <div class="form-input telefono">
+                <label for="telefono">Teléfono (opcional)</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]*" maxlength="12">
+                <p class="mensajeError"></p>
+            </div>
+
+            <div class="form-input asunto">
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" required>
+                <p class="mensajeError"></p>
+            </div>
+
+            <div class="form-input mensaje">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <p class="mensajeError"></p>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

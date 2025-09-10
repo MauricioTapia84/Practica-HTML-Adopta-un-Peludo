@@ -1,9 +1,9 @@
 /* Variables CSS */
 :root {
-    --primary-color: #007BFF; /* Color principal */
-    --primary-color-hover: #0056b3; /* Color al pasar el mouse */
+    --primary-color: #007BFF;
+    --primary-color-hover: #0056b3;
     --error-color: #dc3545;
-    --background-color: #84afd8;
+    --background-color: #f0f8ff;
     --form-background: #fff;
     --border-color: #ced4da;
     --text-color: #333;
@@ -42,9 +42,10 @@
     color: var(--text-color);
 }
 
-/* Estilo de inputs */
+/* Estilo de inputs y textarea */
 input[type="text"],
-input[type="password"] {
+input[type="email"],
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
@@ -54,27 +55,28 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-input:focus {
+input:focus, textarea:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 5px rgba(13,110,253,0.5);
 }
 
+/* Mensaje de error */
 .mensajeError {
-    color: var(--error-color); /* Color definido en las variables */
+    color: var(--error-color);
     font-size: 12px;
     margin-top: 5px;
-    min-height: 14px; /* Espacio reservado */
+    min-height: 14px; /* espacio reservado */
 }
 
 /* Estilo común para botones */
-.btn, button {
+.btn {
     width: 100%; /* Ancho completo */
     padding: 10px;
     margin-top: 10px;
-    background-color: var(--primary-color); /* Color de fondo */
+    background-color: var(--primary-color);
     border: none;
-    color: white; /* Color del texto */
+    color: white;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
@@ -82,11 +84,6 @@ input:focus {
     transition: background-color 0.3s;
 }
 
-.btn:hover, button:hover {
-    background-color: var(--primary-color-hover); /* Color de fondo al pasar el mouse */
-}
-
-/* Espaciado entre los inputs */
-.form-input + .form-input {
-    margin-top: 10px;
+.btn:hover {
+    background-color: var(--primary-color-hover);
 }
