@@ -1,6 +1,6 @@
 /* Variables CSS */
 :root {
-    --primary-color: #007BFF; /* Color principal */
+    --primary-color: #0056b3; /* Color principal */
     --primary-color-hover: #0056b3; /* Color al pasar el mouse */
     --error-color: #dc3545;
     --background-color: #84afd8;
@@ -72,9 +72,9 @@ input:focus {
     width: 100%; /* Ancho completo */
     padding: 10px;
     margin-top: 10px;
-    background-color: var(--primary-color); /* Color de fondo */
+    background-color: blue; 
     border: none;
-    color: white; /* Color del texto */
+    color: blue; 
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
